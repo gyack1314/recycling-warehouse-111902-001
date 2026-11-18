@@ -1,0 +1,38 @@
+{
+  "files": [
+    {
+      "path": "actions.json",
+      "bytes": 1041,
+      "sha256": "31d745b51e19301afa3887dc21578a3b8cb1e4dc5b7e8f72e6fad8fb7f79c3df"
+    },
+    {
+      "path": "legs.parquet",
+      "bytes": 2790,
+      "sha256": "a36b415593d9c30a13c04b52beb161bafdc607d0c2fb630e08f387860dd3d491",
+      "rows": 2
+    },
+    {
+      "path": "receipts.parquet",
+      "bytes": 2456,
+      "sha256": "9838416e838156afe6eab27074031f71da0be91ddff072d721861c2fcb39ef56",
+      "rows": 2
+    },
+    {
+      "path": "sales.parquet",
+      "bytes": 1388,
+      "sha256": "07e10b049b58c5b24387970958eb5c74bb0d55dc35b3b55facabd54363bdfeab",
+      "rows": 1
+    },
+    {
+      "path": "seed.json",
+      "bytes": 1788,
+      "sha256": "8ab86355544ec3f4f146319c73250080baec34df68ea918fa8f47b64efef3c9c"
+    },
+    {
+      "path": "transforms.parquet",
+      "bytes": 2650,
+      "sha256": "7edc8c75d3108287a1dac3e50804faa545c2d0070affc63b431d6f3ba2b8deb3",
+      "rows": 4
+    }
+  ]
+}

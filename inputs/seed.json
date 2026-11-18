@@ -1,0 +1,95 @@
+{
+  "receipts": [
+    {
+      "source": "north",
+      "id": "R1",
+      "revision": 1,
+      "lot": "L0",
+      "station": "N",
+      "day": "2026-10-01",
+      "kg": "100.000",
+      "kind": "external",
+      "replaces": null
+    },
+    {
+      "source": "south",
+      "id": "R1",
+      "revision": 1,
+      "lot": "LS",
+      "station": "N",
+      "day": "2026-10-01",
+      "kg": "40.000",
+      "kind": "external",
+      "replaces": null
+    }
+  ],
+  "transforms": [
+    {
+      "id": "X1",
+      "day": "2026-10-01",
+      "parent": "L0",
+      "child": "LA",
+      "kg": "60.000",
+      "station": "N"
+    },
+    {
+      "id": "X1",
+      "day": "2026-10-01",
+      "parent": "L0",
+      "child": "LB",
+      "kg": "40.000",
+      "station": "N"
+    },
+    {
+      "id": "X2",
+      "day": "2026-10-02",
+      "parent": "LB",
+      "child": "LM",
+      "kg": "20.000",
+      "station": "N"
+    },
+    {
+      "id": "X2",
+      "day": "2026-10-02",
+      "parent": "LS",
+      "child": "LM",
+      "kg": "10.000",
+      "station": "N"
+    }
+  ],
+  "legs": [
+    {
+      "source": "north",
+      "id": "T1",
+      "revision": 1,
+      "side": "dispatch",
+      "peer_source": "south",
+      "peer_id": "U9",
+      "lot": "LA",
+      "station": "N",
+      "kg": "60.000",
+      "day": "2026-10-02"
+    },
+    {
+      "source": "south",
+      "id": "U8",
+      "revision": 1,
+      "side": "receive",
+      "peer_source": "north",
+      "peer_id": "T8",
+      "lot": "LS",
+      "station": "S",
+      "kg": "5.000",
+      "day": "2026-10-02"
+    }
+  ],
+  "sales": [
+    {
+      "id": "O1",
+      "lot": "LB",
+      "station": "N",
+      "day": "2026-10-03",
+      "kg": "15.000"
+    }
+  ]
+}

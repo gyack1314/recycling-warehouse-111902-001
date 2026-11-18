@@ -1,0 +1,61 @@
+[
+  {
+    "step": 1,
+    "table": "legs",
+    "op": "append",
+    "row": {
+      "source": "south",
+      "id": "U9",
+      "revision": 1,
+      "side": "receive",
+      "peer_source": "north",
+      "peer_id": "T1",
+      "lot": "LA",
+      "station": "S",
+      "kg": "60.000",
+      "day": "2026-10-03"
+    }
+  },
+  {
+    "step": 2,
+    "table": "receipts",
+    "op": "cancel",
+    "target": [
+      "north",
+      "R1",
+      1
+    ]
+  },
+  {
+    "step": 3,
+    "table": "receipts",
+    "op": "append",
+    "row": {
+      "source": "north",
+      "id": "R1",
+      "revision": 2,
+      "lot": "L0",
+      "station": "N",
+      "day": "2026-10-01",
+      "kg": "90.000",
+      "kind": "external",
+      "replaces": [
+        "north",
+        "R1",
+        1
+      ]
+    }
+  },
+  {
+    "step": 4,
+    "table": "transforms",
+    "op": "append",
+    "row": {
+      "id": "X-bad",
+      "day": "2026-10-04",
+      "parent": "LM",
+      "child": "L0",
+      "kg": "2.000"
+    }
+  }
+]
